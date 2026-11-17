@@ -34,16 +34,20 @@ A bespoke, production-grade international digital portfolio and executive resume
 5. **Security Auditing & Penetration Testing**: OWASP Top 10 defenses, CSRF/XSS protection, and Linux server hardening.
 6. **Hardware Prototyping (Embedded Systems)**: Microcontroller automation (Arduino, ESP32) with telemetry dashboards.
 
-### 3. Thirteen Flagship Production Case Studies
-All thirteen applications feature live demos and public source code:
+### 3. Nineteen Flagship Production Case Studies & Commercial Ventures
+All nineteen platforms feature live links, interactive demos, or Figma design systems:
 
-| Platform | Specialization | Tech Stack | Live Demo | Source Code |
+| Platform / Venture | Specialization | Architecture & Stack | Live Demo / Link | Source / Spec |
 | :--- | :--- | :--- | :--- | :--- |
+| **Boghcheh (بقچه)** | Cultural Handicrafts Marketplace | Co-Founder, Multi-Vendor Architecture, Payment Gateway, Shipping Engine | [boghcheh.com](https://boghcheh.com/) | [boghcheh.com](https://boghcheh.com/) |
+| **Megabyte System** | Enterprise IT Infrastructure & IoT | Co-Founder, Arduino/ESP32 Telemetry, Linux LPIC-1 Hardening | [GitHub](https://github.com/lxlnimalxl) | [GitHub](https://github.com/lxlnimalxl) |
 | **SHOP.CO** | Apparel & Luxury E-Commerce | React 19, Django 5 REST, 3-Angle PDP, Filters, Cart | [Live Demo](https://lxlnimalxl.github.io/shopco-ecommerce-platform/) | [GitHub](https://github.com/lxlnimalxl/shopco-ecommerce-platform) |
 | **CinePass** | Cinema Ticket Booking Engine | React 19, Django 5 REST, Curved SVG Seating, QR Pass | [Live Demo](https://lxlnimalxl.github.io/cinepass-cinema-ticket-booking/) | [GitHub](https://github.com/lxlnimalxl/cinepass-cinema-ticket-booking) |
 | **Vakil** | International Legal Counsel | React 19, Django 5 REST, Court Fee Algorithm | [Live Demo](https://lxlnimalxl.github.io/vakil-legal-platform/) | [GitHub](https://github.com/lxlnimalxl/vakil-legal-platform) |
 | **Ashyaneh** | Accommodation & Hotel Booking | React 19, Django 5 REST, Dual Desktop/Mobile Sim | [Live Demo](https://lxlnimalxl.github.io/ashyaneh-hotel-booking-platform/) | [GitHub](https://github.com/lxlnimalxl/ashyaneh-hotel-booking-platform) |
 | **SocioSphere** | Full-Scale Social Platform | React 19, Django 5 REST, Tri-Screen Canvas, Post Feed | [Live Demo](https://lxlnimalxl.github.io/sociosphere-social-platform/) | [GitHub](https://github.com/lxlnimalxl/sociosphere-social-platform) |
+| **Gem-Cutting Tools** | Specialist Gemological Machinery | Specialized E-Commerce, Lapidary Tool Catalog, WooCommerce, UI/UX | [Figma Spec](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-68) | [Figma Node](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-68) |
+| **Toy Store Mobile App** | Educational Children Play & Toys | Mobile E-Commerce UI/UX, Age Category Filtration, Safe Checkout | [Figma Spec](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-58) | [Figma Node](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-58) |
 | **Cyber.Game** | Gaming & Entertainment Landing | React 19, Tailwind v4, Web Audio API, Confetti | [Live Demo](https://lxlnimalxl.github.io/cyber-game-landing/) | [GitHub](https://github.com/lxlnimalxl/cyber-game-landing) |
 | **Tactical Strike** | Sci-Fi Warfare Platform | React 19, Tailwind v4, Operative Dossiers, Audio | [Live Demo](https://lxlnimalxl.github.io/futuristic-tactical-landing/) | [GitHub](https://github.com/lxlnimalxl/futuristic-tactical-landing) |
 | **Deluxe Strategy** | Interactive Ludo Board Game | React 19, SVG Board Engine, Turn State Machine | [Live Demo](https://lxlnimalxl.github.io/deluxe-strategy-board-game/) | [GitHub](https://github.com/lxlnimalxl/deluxe-strategy-board-game) |
@@ -52,14 +56,16 @@ All thirteen applications feature live demos and public source code:
 | **FinWise** | Wealth & Budget Manager | React 19, Multi-Account Ledgers, Analytics Charts | [Live Demo](https://lxlnimalxl.github.io/finwise-mobile-banking-app/) | [GitHub](https://github.com/lxlnimalxl/finwise-mobile-banking-app) |
 | **NovaBank** | Digital Mobile Banking | React 19, Card Stack Carousel, Quick Transfer | [Live Demo](https://lxlnimalxl.github.io/novabank-mobile-banking-app/) | [GitHub](https://github.com/lxlnimalxl/novabank-mobile-banking-app) |
 | **Nexcent Agency** | Corporate B2B Platform | React 19, Tailwind v4, Metric Counters | [Live Demo](https://lxlnimalxl.github.io/nexcent-agency-landing-page/) | [GitHub](https://github.com/lxlnimalxl/nexcent-agency-landing-page) |
+| **Corporate Identity & Cards** | Executive Stationery & Branding | Luxury Business Cards, Typography Guidelines, Vector Logomarks | [Figma Spec](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-79) | [Figma Node](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-79) |
+| **Cybersecurity Posters** | Dev Conferences & Security Media | Visual Design Series, Git Meetups, Hack The Gibson Posters | [Figma Spec](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-96) | [Figma Node](https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-96) |
 
 ---
 
 ## Two-Language Unified PDF Resume
 
 The project generates a single, print-ready document (`Seyyed_Nima_Rounaghi_Resume.pdf`) designed to meet international hiring standards:
-- **Pages 1 & 2 (English)**: Executive Profile, Core Capabilities, Technical Toolkit, Professional Experience, Academic Education, and Production Portfolios.
-- **Pages 3 & 4 (Persian)**: رزومه رسمی فارسی با فونت استاندارد وزیرمتن، چیدمان دو ستونه راست‌به‌چپ، سوابق تحصیلی، گواهینامه‌های بین‌المللی و جدول پروژه‌ها.
+- **Pages 1 & 2 (English)**: Executive Profile, Core Capabilities, Technical Toolkit, Professional Experience & Ventures (Boghcheh & Megabyte System), Academic Education, and Production Portfolios.
+- **Pages 3 & 4 (Persian)**: رزومه رسمی فارسی با فونت استاندارد وزیرمتن، سوابق هم‌بنیان‌گذاری بقچه و مگابایت سیستم، چیدمان دو ستونه راست‌به‌چپ، سوابق تحصیلی، گواهینامه‌های بین‌المللی و جدول پروژه‌ها.
 
 To regenerate the PDF at any time:
 ```bash

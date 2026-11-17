@@ -13,7 +13,7 @@ export default function ProjectsSection({ lang = 'en', projectsData }) {
     <section id="projects" className="py-20 border-b border-white/8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div className="max-w-3xl">
             <span className="text-xs font-bold uppercase tracking-widest text-zinc-400 block mb-2">
               {lang === 'fa' ? 'نمونه‌کارهای زنده و پروداکشن' : 'Flagship Portfolio'}
@@ -27,10 +27,10 @@ export default function ProjectsSection({ lang = 'en', projectsData }) {
           </div>
 
           {/* Filter Pills */}
-          <div className="flex flex-wrap gap-2 bg-[#121216] p-1.5 rounded-2xl border border-white/10 self-start md:self-auto">
+          <div className="flex flex-wrap gap-2 bg-[#121216] p-1.5 rounded-2xl border border-white/10 self-start lg:self-auto">
             <button
               onClick={() => setFilter('all')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 filter === 'all'
                   ? 'bg-white text-black shadow-sm'
                   : 'text-zinc-400 hover:text-white'
@@ -39,8 +39,18 @@ export default function ProjectsSection({ lang = 'en', projectsData }) {
               {projectsData.filterAll}
             </button>
             <button
+              onClick={() => setFilter('ventures')}
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                filter === 'ventures'
+                  ? 'bg-white text-black shadow-sm'
+                  : 'text-zinc-400 hover:text-white'
+              }`}
+            >
+              {projectsData.filterVentures}
+            </button>
+            <button
               onClick={() => setFilter('fullstack')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 filter === 'fullstack'
                   ? 'bg-white text-black shadow-sm'
                   : 'text-zinc-400 hover:text-white'
@@ -50,7 +60,7 @@ export default function ProjectsSection({ lang = 'en', projectsData }) {
             </button>
             <button
               onClick={() => setFilter('webapp')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 filter === 'webapp'
                   ? 'bg-white text-black shadow-sm'
                   : 'text-zinc-400 hover:text-white'
@@ -60,13 +70,23 @@ export default function ProjectsSection({ lang = 'en', projectsData }) {
             </button>
             <button
               onClick={() => setFilter('interactive')}
-              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 filter === 'interactive'
                   ? 'bg-white text-black shadow-sm'
                   : 'text-zinc-400 hover:text-white'
               }`}
             >
               {projectsData.filterInteractive}
+            </button>
+            <button
+              onClick={() => setFilter('design')}
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                filter === 'design'
+                  ? 'bg-white text-black shadow-sm'
+                  : 'text-zinc-400 hover:text-white'
+              }`}
+            >
+              {projectsData.filterDesign}
             </button>
           </div>
         </div>

@@ -11,17 +11,24 @@ import plantoImg from '../assets/projects/planto.png';
 import finwiseImg from '../assets/projects/finwise.png';
 import novabankImg from '../assets/projects/novabank.png';
 import nexcentImg from '../assets/projects/nexcent.png';
+import boghchehImg from '../assets/projects/boghcheh.png';
+import figmaUiuxWebImg from '../assets/projects/figma-uiux-web.png';
+import figmaMobileAppImg from '../assets/projects/figma-mobile-app.png';
+import figmaWebProjectsImg from '../assets/projects/figma-web-projects.png';
+import figmaBrandingCardsImg from '../assets/projects/figma-branding-cards.png';
+import figmaGraphicPostersImg from '../assets/projects/figma-graphic-posters.png';
 
 export const content = {
   en: {
     meta: {
-      title: "Seyyed Nima Rounaghi | Full-Stack Software Engineer & UI/UX Designer",
+      title: "Seyyed Nima Rounaghi | Full-Stack Software Engineer & UI/UX Designer | Co-Founder",
       role: "Full-Stack Software Engineer & UI/UX Designer",
+      subrole: "Co-Founder at Boghcheh & Megabyte System",
       specialty: "Custom Platforms & Security",
       status: "Available for high-impact international contracts & full-time remote roles",
       location: "Open to Worldwide Remote",
       experienceYears: "5+ Years",
-      completedProjects: "13+ Flagships",
+      completedProjects: "19+ Production Portfolios",
     },
     nav: {
       about: "Overview",
@@ -43,7 +50,7 @@ export const content = {
       ctaPrimary: "Explore Case Studies",
       ctaSecondary: "Download Two-Language Resume",
       stats: [
-        { value: "13+", label: "Production Platforms" },
+        { value: "19+", label: "Production Platforms" },
         { value: "100%", label: "Figma-to-Code Parity" },
         { value: "5+ Yrs", label: "Engineering & Design" },
         { value: "Sec-First", label: "Audited & Hardened" },
@@ -113,14 +120,38 @@ export const content = {
     },
     projects: {
       title: "Featured International Production Portfolios",
-      subtitle: "Thirteen production-grade applications engineered from scratch with zero compromises on performance, accessibility, or visual fidelity.",
+      subtitle: "Nineteen production-grade platforms, commercial ventures, and case studies engineered with zero compromises on performance, accessibility, or visual fidelity.",
       filterAll: "All Categories",
+      filterVentures: "Ventures & Co-Founding",
       filterFullStack: "Full-Stack (React + Django)",
-      filterWebApps: "Web Applications",
+      filterWebApps: "Web & Mobile Apps",
       filterInteractive: "Interactive & Games",
+      filterDesign: "Brand & Visual Systems",
       viewDemo: "Live Demo",
-      viewCode: "Source Code",
+      viewCode: "Source Code / Spec",
       items: [
+        {
+          id: "boghcheh",
+          title: "Boghcheh Cultural Handicrafts Marketplace",
+          category: "ventures",
+          categoryLabel: "Co-Founder & E-Commerce",
+          image: boghchehImg,
+          description: "Co-founded specialized Iranian handicrafts and cultural goods marketplace. Scalable multi-vendor architecture, artisan onboarding, storytelling product pages, automated shipping calculator, and secure bank payment gateways.",
+          tags: ["Co-Founder", "E-Commerce", "Artisan Tech", "Payment Gateway"],
+          demoUrl: "https://boghcheh.com/",
+          codeUrl: "https://boghcheh.com/"
+        },
+        {
+          id: "megabyte",
+          title: "Megabyte System Enterprise IT & Embedded Systems",
+          category: "ventures",
+          categoryLabel: "Co-Founder & Enterprise IT",
+          image: figmaWebProjectsImg,
+          description: "Co-founded hardware engineering and enterprise IT consultancy. Provides custom microcontroller IoT automation with Arduino/ESP32, local Linux server administration (LPIC-1), and network penetration testing for organizations.",
+          tags: ["Co-Founder", "Embedded IoT", "Linux LPIC-1", "Hardware Tech"],
+          demoUrl: "https://github.com/lxlnimalxl",
+          codeUrl: "https://github.com/lxlnimalxl"
+        },
         {
           id: "shopco",
           title: "SHOP.CO E-Commerce Platform",
@@ -175,6 +206,28 @@ export const content = {
           tags: ["React 19", "Django 5 REST", "Tri-Screen Canvas", "Feed Engine"],
           demoUrl: "https://lxlnimalxl.github.io/sociosphere-social-platform/",
           codeUrl: "https://github.com/lxlnimalxl/sociosphere-social-platform"
+        },
+        {
+          id: "gemcutting",
+          title: "Gem-Cutting Precision Tools E-Commerce",
+          category: "webapp",
+          categoryLabel: "Specialized E-Commerce",
+          image: figmaUiuxWebImg,
+          description: "Specialized e-commerce and UI/UX design engineered for gemological tools, lapidary machinery, diamond cutting disks, and gemstone polishing supplies.",
+          tags: ["E-Commerce", "UI/UX", "WooCommerce", "Catalog Engine"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-68",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-68"
+        },
+        {
+          id: "toystore",
+          title: "Toy Store Educational Play Mobile App",
+          category: "webapp",
+          categoryLabel: "Mobile App UI/UX",
+          image: figmaMobileAppImg,
+          description: "Playful, high-engagement mobile e-commerce application UI/UX tailored for educational toys, age-based product categories, animated carts, and child-safe purchase flows.",
+          tags: ["Mobile App UI", "Figma", "User Journey", "E-Commerce"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-58",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-58"
         },
         {
           id: "cybergame",
@@ -263,15 +316,37 @@ export const content = {
           tags: ["React 19", "Tailwind v4", "B2B SaaS", "Metric Counters"],
           demoUrl: "https://lxlnimalxl.github.io/nexcent-agency-landing-page/",
           codeUrl: "https://github.com/lxlnimalxl/nexcent-agency-landing-page"
+        },
+        {
+          id: "brandingcards",
+          title: "Executive Corporate Stationery & Identity System",
+          category: "design",
+          categoryLabel: "Brand Identity & Print",
+          image: figmaBrandingCardsImg,
+          description: "Comprehensive corporate branding suite including premium tactile business cards, envelope mockups, typography guidelines, vector logomarks, and cohesive print-ready assets.",
+          tags: ["Brand Identity", "Figma", "Print Systems", "Vector Art"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-79",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-79"
+        },
+        {
+          id: "graphicposters",
+          title: "Cybersecurity & Developer Conference Posters",
+          category: "design",
+          categoryLabel: "Graphic Design & Posters",
+          image: figmaGraphicPostersImg,
+          description: "Visual media series created for developer meetups, cybersecurity seminars, Git workshops, and 'Hack The Gibson' culture posters with strong typography and high visual impact.",
+          tags: ["Graphic Design", "Photoshop", "Cybersecurity", "Poster Art"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-96",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-96"
         }
       ]
     },
     resume: {
       title: "Executive Curriculum Vitae",
-      subtitle: "Verified career trajectory, academic foundation, certifications, and engineering history.",
+      subtitle: "Verified career trajectory, venture track records, academic foundation, certifications, and engineering history.",
       sections: {
         summary: "Executive Summary",
-        experience: "Professional Experience",
+        experience: "Professional Experience & Ventures",
         education: "Academic Education",
         certifications: "Certifications & Credentials",
         philosophy: "Engineering & Design Philosophy",
@@ -280,12 +355,34 @@ export const content = {
         "I do not just write code blindly; I design intuitive interfaces and build systems that are secure by default. You get the creative eye of a designer and the rigorous logic of a security-focused engineer in a single technical partner.",
       experienceList: [
         {
+          period: "2023 — Present",
+          title: "Co-Founder & Chief Technology Officer (CTO)",
+          company: "Boghcheh (https://boghcheh.com/)",
+          location: "Tehran & Nationwide / Remote",
+          achievements: [
+            "Co-founded and engineered Boghcheh, a premier specialized e-commerce platform dedicated to Persian authentic handicrafts and artisan creations.",
+            "Designed and implemented high-conversion catalog UX, multi-vendor product databases, automated shipping calculations, and secure Iranian banking payment gateway connections.",
+            "Established cohesive brand identity, photography guidelines, and design systems bridging cultural craftsmanship with modern minimalist digital experience."
+          ]
+        },
+        {
+          period: "2021 — Present",
+          title: "Co-Founder & Lead Systems/Hardware Engineer",
+          company: "Megabyte System (مگابایت سیستم)",
+          location: "Birjand / Hybrid",
+          achievements: [
+            "Co-founded enterprise computer engineering, systems infrastructure, and IT hardware solutions firm.",
+            "Engineered custom microcontroller IoT prototypes and telemetry systems using Arduino and ESP32 with serial and cloud communication.",
+            "Administered secure Linux server environments (LPIC-1 certified), automated disaster recovery workflows, and conducted vulnerability penetration tests for corporate networks."
+          ]
+        },
+        {
           period: "2022 — Present",
           title: "Lead Full-Stack Software Engineer & UI/UX Consultant",
           company: "Independent & International Contracts",
           location: "Remote",
           achievements: [
-            "Architected and deployed 13+ modern web platforms spanning luxury e-commerce, cinema ticketing, legal counsel, and mobile fintech.",
+            "Architected and deployed 19+ production platforms spanning luxury e-commerce, cinema ticketing, legal counsel, and mobile fintech.",
             "Eliminated client coordination overhead by handling both Figma design systems and production React 19 / Django 5 codebases.",
             "Engineered secure-by-default RESTful endpoints, implementing OWASP defenses, CSRF/CORS hardening, and token authentication.",
             "Designed and automated ETL data scrapers, Telegram bots, and backend cron jobs that eliminated hundreds of hours of manual operations."
@@ -367,13 +464,14 @@ export const content = {
 
   fa: {
     meta: {
-      title: "سید نیما رونقی | مهندس نرم‌افزار فول‌استک و طراح UI/UX",
+      title: "سید نیما رونقی | مهندس نرم‌افزار فول‌استک و طراح UI/UX | هم‌بنیان‌گذار",
       role: "مهندس نرم‌افزار فول‌استک و طراح UI/UX",
+      subrole: "هم‌بنیان‌گذار بقچه و مگابایت سیستم",
       specialty: "توسعه پلتفرم‌های اختصاصی و امنیت",
       status: "آماده همکاری در پروژه‌های سطح اول بین‌المللی و ریموت فول‌تایم",
       location: "آماده همکاری بین‌المللی ریموت",
       experienceYears: "۵+ سال تجربه",
-      completedProjects: "۱۳+ محصول کامل",
+      completedProjects: "۱۹+ محصول و نمونه‌کار تخصصی",
     },
     nav: {
       about: "درباره من",
@@ -395,7 +493,7 @@ export const content = {
       ctaPrimary: "مشاهده نمونه‌کارها",
       ctaSecondary: "دانلود رزومه رسمی دو زبانه",
       stats: [
-        { value: "۱۳+", label: "پلتفرم پروداکشن" },
+        { value: "۱۹+", label: "پلتفرم پروداکشن" },
         { value: "۱۰۰٪", label: "تطابق کامل فیگما با کد" },
         { value: "۵+ سال", label: "توسعه نرم‌افزار و دیزاین" },
         { value: "امنیت محور", label: "تست نفوذ و ایمن‌سازی" },
@@ -465,14 +563,38 @@ export const content = {
     },
     projects: {
       title: "پروژه‌های بین‌المللی منتخب و آماده محصول",
-      subtitle: "سیزده پلتفرم پروداکشن که با بالاترین سطح ظرافت طراحی و منطق مهندسی پیاده‌سازی شده‌اند.",
+      subtitle: "نوزده پلتفرم پروداکشن، استارتاپ‌های هم‌بنیان‌گذاری‌شده و نمونه‌کارهای تخصصی که با بالاترین سطح ظرافت طراحی و منطق مهندسی پیاده‌سازی شده‌اند.",
       filterAll: "همه پروژه‌ها",
+      filterVentures: "بنیان‌گذاری و پلتفرم‌ها",
       filterFullStack: "فول‌استک (React + Django)",
-      filterWebApps: "وب‌اپلیکیشن‌ها",
-      filterInteractive: "پروژه‌های تعاملی و بازی",
+      filterWebApps: "وب و اپلیکیشن‌ها",
+      filterInteractive: "بازی و مدیا تعاملی",
+      filterDesign: "برندینگ و سیستم‌های بصری",
       viewDemo: "مشاهده دموی آنلاین",
-      viewCode: "سورس کد گیت‌هاب",
+      viewCode: "سورس کد / مستندات",
       items: [
+        {
+          id: "boghcheh",
+          title: "پلتفرم تخصصی صنایع دستی و دست‌بافته‌های بقچه",
+          category: "ventures",
+          categoryLabel: "هم‌بنیان‌گذار و تجارت الکترونیک",
+          image: boghchehImg,
+          description: "هم‌بنیان‌گذار و مدیر ارشد فنی (CTO) در پلتفرم تخصصی صنایع دستی بقچه. معماری چندفروشگاهی، گالری معرفی آثار هنرمندان اصیل ایرانی، محاسبه خودکار هزینه ارسال، دیتابیس محصولات و اتصال به درگاه‌های بانکی شاپرک.",
+          tags: ["هم‌بنیان‌گذار", "تجارت الکترونیک", "صنایع دستی", "درگاه پرداخت"],
+          demoUrl: "https://boghcheh.com/",
+          codeUrl: "https://boghcheh.com/"
+        },
+        {
+          id: "megabyte",
+          title: "مگابایت سیستم؛ زیرساخت فناوری و اتوماسیون سخت‌افزار",
+          category: "ventures",
+          categoryLabel: "هم‌بنیان‌گذار و مهندسی سیستم‌ها",
+          image: figmaWebProjectsImg,
+          description: "هم‌بنیان‌گذار و مهندس ارشد سخت‌افزار و شبکه در مگابایت سیستم. اتوماسیون میکروکنترلری با برد‌های Arduino و ESP32، پیکربندی سرورهای لینوکس LPIC-1، عیب‌یابی سطح سخت‌افزار و آزمون نفوذ و ایمن‌سازی شبکه‌های سازمانی.",
+          tags: ["هم‌بنیان‌گذار", "اینترنت اشیاء", "سرور لینوکس", "اتوماسیون سخت‌افزار"],
+          demoUrl: "https://github.com/lxlnimalxl",
+          codeUrl: "https://github.com/lxlnimalxl"
+        },
         {
           id: "shopco",
           title: "پلتفرم فروشگاهی بین‌المللی SHOP.CO",
@@ -527,6 +649,28 @@ export const content = {
           tags: ["React 19", "Django 5 REST", "کانواس سه‌گانه", "موتور فید محتوا"],
           demoUrl: "https://lxlnimalxl.github.io/sociosphere-social-platform/",
           codeUrl: "https://github.com/lxlnimalxl/sociosphere-social-platform"
+        },
+        {
+          id: "gemcutting",
+          title: "سایت تخصصی تجهیزات و ابزارآلات گوهرتراشی",
+          category: "webapp",
+          categoryLabel: "فروشگاه تخصصی ابزار",
+          image: figmaUiuxWebImg,
+          description: "پلتفرم فروشگاهی و طراحی رابط کاربری تخصصی جهت عرضه ابزارآلات گوهرتراشی، دستگاه‌های تراش سنگ‌های قیمتی و دیسک‌های الماسه با کاتالوگ دقیق مشخصات فنی.",
+          tags: ["طراحی UI/UX", "فروشگاه تخصصی", "ووکامرس", "کاتالوگ فنی"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-68",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-68"
+        },
+        {
+          id: "toystore",
+          title: "طراحی رابط کاربری اپلیکیشن موبایل فروشگاه اسباب‌بازی",
+          category: "webapp",
+          categoryLabel: "اپلیکیشن موبایل و دیزاین",
+          image: figmaMobileAppImg,
+          description: "طراحی رابط کاربری اپلیکیشن موبایل فروشگاه اسباب‌بازی‌های فکری و آموزشی با دسته‌بندی رده‌های سنی، سبد خرید جذاب و فرآیند تسویه حساب اختصاصی والدین.",
+          tags: ["طراحی اپ موبایل", "سیستم دیزاین", "تجربه کاربری", "فروشگاه کودک"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-58",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-58"
         },
         {
           id: "cybergame",
@@ -615,15 +759,37 @@ export const content = {
           tags: ["React 19", "Tailwind v4", "SaaS سازمانی", "کانترهای آماری"],
           demoUrl: "https://lxlnimalxl.github.io/nexcent-agency-landing-page/",
           codeUrl: "https://github.com/lxlnimalxl/nexcent-agency-landing-page"
+        },
+        {
+          id: "brandingcards",
+          title: "مجموعه هویت بصری سازمانی، کارت ویزیت و ست اداری",
+          category: "design",
+          categoryLabel: "هویت بصری و اوراق اداری",
+          image: figmaBrandingCardsImg,
+          description: "طراحی هویت بصری یکپارچه شرکتی شامل کارت‌های ویزیت لوکس، سربرگ و ست اداری، گایدلاین پالت رنگ و تایپوگرافی، و لوگوتایپ‌های وکتوری برداری.",
+          tags: ["هویت بصری", "طراحی برندینگ", "کارت ویزیت", "وکتور آرت"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-79",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-79"
+        },
+        {
+          id: "graphicposters",
+          title: "مجموعه پوسترهای گرافیکی رویدادهای فناوری و امنیت سایبری",
+          category: "design",
+          categoryLabel: "طراحی گرافیک و پوسترها",
+          image: figmaGraphicPostersImg,
+          description: "مجموعه آثار گرافیکی و پوسترهای رویدادهای تخصصی برنامه‌نویسی، سمینارهای امنیت سایبری، کارگاه‌های Git و پوسترهای مفهومی هکینگ با تایپوگرافی برجسته.",
+          tags: ["طراحی پوستر", "فتوشاپ", "امنیت سایبری", "تایپوگرافی"],
+          demoUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-96",
+          codeUrl: "https://www.figma.com/design/XAKmDNlfHCWm0sScko2FxT/Resume-En?node-id=0-96"
         }
       ]
     },
     resume: {
       title: "رزومه و سوابق حرفه‌ای رسمی",
-      subtitle: "پیشینه شغلی، تحصیلات آکادمیک، گواهینامه‌ها و فلسفه مهندسی نرم‌افزار.",
+      subtitle: "پیشینه شغلی، تجربیات هم‌بنیان‌گذاری، تحصیلات آکادمیک، گواهینامه‌ها و فلسفه مهندسی نرم‌افزار.",
       sections: {
         summary: "خلاصه مدیریتی",
-        experience: "سوابق حرفه‌ای",
+        experience: "سوابق حرفه‌ای و پروژه‌های هم‌بنیان‌گذاری",
         education: "تحصیلات دانشگاهی",
         certifications: "گواهینامه‌های تخصصی",
         philosophy: "فلسفه طراحی و مهندسی",
@@ -632,12 +798,34 @@ export const content = {
         "من کدهارا بدون دیدگاه طراحی نمی‌نویسم؛ رابط‌های کاربری را با شهود انسانی خلق می‌کنم و سیستم‌ها را با معماری ایمن از پایه پایه‌ریزی می‌نمایم. کارفرما دید خلاقانه یک طراح و منطق بی‌چون‌وچرای یک مهندس مسلط به امنیت را همزمان در یک همراه فنی دریافت می‌کند.",
       experienceList: [
         {
+          period: "۱۴۰۲ — اکنون (2023 — Present)",
+          title: "هم‌بنیان‌گذار و مدیر ارشد فناوری (CTO)",
+          company: "سامانه تخصصی صنایع دستی بقچه (boghcheh.com)",
+          location: "تهران و سراسر کشور / دورکاری",
+          achievements: [
+            "هم‌بنیان‌گذاری و معماری فنی پلتفرم جامع صنایع دستی بقچه به عنوان بستر تجارت الکترونیک دست‌بافته‌ها، سرامیک و هنرهای اصیل ایرانی.",
+            "پیاده‌سازی پایگاه‌داده چندفروشگاهی محصولات، محاسبه خودکار هزینه بسته‌بندی و ارسال پستی، و اتصال به درگاه‌های پرداخت امن شاپرک.",
+            "طراحی هویت بصری، گایدلاین‌های عکاسی صنعتی محصول و سیستم طراحی دیجیتال که هنر اصیل ایرانی را با تجربه مدرن مینیمال وب پیوند داد."
+          ]
+        },
+        {
+          period: "۱۴۰۰ — اکنون (2021 — Present)",
+          title: "هم‌بنیان‌گذار و مهندس ارشد سیستم‌ها و سخت‌افزار",
+          company: "مگابایت سیستم (Megabyte System)",
+          location: "بیرجند / هیبریدی",
+          achievements: [
+            "هم‌بنیان‌گذاری شرکت تخصصی خدمات مهندسی کامپیوتر، زیرساخت فناوری و راهکارهای سخت‌افزاری و شبکه.",
+            "پیاده‌سازی پروژه‌های اتوماسیون اینترنت اشیاء (IoT) و سامانه‌های داده میکروکنترلری با تراشه‌های Arduino و ESP32 تحت ارتباطات سریال و وای‌فای.",
+            "مدیریت سرورهای لینوکسی امن بر پایه سرفصل‌های استاندارد LPIC-1، اتوماسیون فرآیندهای بازیابی بحران و اجرای تست‌های نفوذ شبکه برای سازمان‌ها."
+          ]
+        },
+        {
           period: "۱۴۰۱ — اکنون (2022 — Present)",
           title: "مهندس ارشد نرم‌افزار فول‌استک و مشاور طراحی UI/UX",
           company: "قراردادهای بین‌المللی و فریلنسینگ",
           location: "دورکاری / ریموت",
           achievements: [
-            "معماری و توسعه بیش از ۱۳ پلتفرم جامع وب شامل سامانه‌های تجارت الکترونیک، رزرو بلیت، سامانه‌های حقوقی و فین‌تک.",
+            "معماری و توسعه بیش از ۱۹ پلتفرم جامع وب شامل سامانه‌های تجارت الکترونیک، رزرو بلیت، سامانه‌های حقوقی و فین‌تک.",
             "حذف هزینه‌های مضاعف و عدم هماهنگی میان طراح و برنامه‌نویس با پوشش کامل طراحی سیستم‌ها در فیگما و پیاده‌سازی بی‌نقص در React 19 و Django 5.",
             "پیاده‌سازی اندپوینت‌های RESTful امن با استانداردهای OWASP، محافظت در برابر حملات تزریق و پیاده‌سازی احراز هویت توکن‌محور.",
             "طراحی و راه‌اندازی ربات‌های اتوماسیون داده، ربات‌های تلگرام و کرون‌جاب‌های پردازشی که منجر به حذف صدها ساعت کار تکراری گردید."
