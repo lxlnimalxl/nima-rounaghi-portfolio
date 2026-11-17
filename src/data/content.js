@@ -149,8 +149,8 @@ export const content = {
           image: figmaWebProjectsImg,
           description: "Co-founded hardware engineering and enterprise IT consultancy. Provides custom microcontroller IoT automation with Arduino/ESP32, local Linux server administration (LPIC-1), and network penetration testing for organizations.",
           tags: ["Co-Founder", "Embedded IoT", "Linux LPIC-1", "Hardware Tech"],
-          demoUrl: "https://github.com/lxlnimalxl",
-          codeUrl: "https://github.com/lxlnimalxl"
+          demoUrl: "https://megabytesystem.com/",
+          codeUrl: "https://megabytesystem.com/"
         },
         {
           id: "shopco",
@@ -368,7 +368,7 @@ export const content = {
         {
           period: "2021 — Present",
           title: "Co-Founder & Lead Systems/Hardware Engineer",
-          company: "Megabyte System (مگابایت سیستم)",
+          company: "Megabyte System (https://megabytesystem.com/)",
           location: "Birjand / Hybrid",
           achievements: [
             "Co-founded enterprise computer engineering, systems infrastructure, and IT hardware solutions firm.",
@@ -443,7 +443,7 @@ export const content = {
       title: "Let's Build Something Exceptional",
       subtitle: "Send me a message about what you are trying to build. Let's figure out the smartest and most secure way to get it done.",
       email: "nimarounaghi11@gmail.com",
-      phone: "+98 915 779 9337 / +98 993 540 2771",
+      phone: "+98 915 779 9337",
       telegram: "@lxlnimalxl",
       linkedin: "linkedin.com/in/nima-rounaghi",
       github: "github.com/lxlnimalxl",
@@ -453,7 +453,8 @@ export const content = {
         subjectLabel: "Project Type / Subject",
         messageLabel: "Tell me about your project, timeline, and goals",
         submitBtn: "Send Project Inquiry",
-        successMsg: "Thank you for reaching out. Your message has been prepared for dispatch."
+        submittingBtn: "Transmitting Inquiry...",
+        successMsg: "Your message has been sent directly to nimarounaghi11@gmail.com. I will get back to you promptly."
       }
     },
     footer: {
@@ -590,10 +591,10 @@ export const content = {
           category: "ventures",
           categoryLabel: "هم‌بنیان‌گذار و مهندسی سیستم‌ها",
           image: figmaWebProjectsImg,
-          description: "هم‌بنیان‌گذار و مهندس ارشد سخت‌افزار و شبکه در مگابایت سیستم. اتوماسیون میکروکنترلری با برد‌های Arduino و ESP32، پیکربندی سرورهای لینوکس LPIC-1، عیب‌یابی سطح سخت‌افزار و آزمون نفوذ و ایمن‌سازی شبکه‌های سازمانی.",
+          description: "هم‌بنیان‌گذار و مهندس ارشد سخت‌افزار و شبکه در مگابایت سیستم (megabytesystem.com). اتوماسیون میکروکنترلری با برد‌های Arduino و ESP32، پیکربندی سرورهای لینوکس LPIC-1، عیب‌یابی سطح سخت‌افزار و آزمون نفوذ و ایمن‌سازی شبکه‌های سازمانی.",
           tags: ["هم‌بنیان‌گذار", "اینترنت اشیاء", "سرور لینوکس", "اتوماسیون سخت‌افزار"],
-          demoUrl: "https://github.com/lxlnimalxl",
-          codeUrl: "https://github.com/lxlnimalxl"
+          demoUrl: "https://megabytesystem.com/",
+          codeUrl: "https://megabytesystem.com/"
         },
         {
           id: "shopco",
@@ -811,7 +812,7 @@ export const content = {
         {
           period: "۱۴۰۰ — اکنون (2021 — Present)",
           title: "هم‌بنیان‌گذار و مهندس ارشد سیستم‌ها و سخت‌افزار",
-          company: "مگابایت سیستم (Megabyte System)",
+          company: "مگابایت سیستم (megabytesystem.com)",
           location: "بیرجند / هیبریدی",
           achievements: [
             "هم‌بنیان‌گذاری شرکت تخصصی خدمات مهندسی کامپیوتر، زیرساخت فناوری و راهکارهای سخت‌افزاری و شبکه.",
@@ -850,7 +851,7 @@ export const content = {
           location: "دورکاری",
           achievements: [
             "خلق سفرهای کاربری (User Journey)، وایرفریم‌ها و پروتوتایپ‌های تعاملی باکیفیت در Figma و ادوبی.",
-            "طراحی هویت جامع بصری سازمانی شامل راهنمای سبک تایپوگرافی، لوگوتایپ‌های وکتوری و اقلام تبلیغاتی دیجیتال.",
+            "طراحی هویت بصری جامع سازمانی شامل راهنمای سبک تایپوگرافی، لوگوتایپ‌های وکتوری و اقلام تبلیغاتی دیجیتال.",
             "ارزیابی تجربه کاربری و آدیت استانداردهای دسترسی‌پذیری (a11y) برای اطمینان از سهولت کاربری در تمام دیوایس‌ها."
           ]
         }
@@ -886,7 +887,7 @@ export const content = {
       title: "بیایید با هم ایده‌های بزرگ را به واقعیت تبدیل کنیم",
       subtitle: "درباره پروژه‌ای که قصد اجرای آن را دارید پیامی ارسال کنید تا هوشمندانه‌ترین و امن‌ترین مسیر ساخت آن را برنامه‌ریزی کنیم.",
       email: "nimarounaghi11@gmail.com",
-      phone: "09157799337 / 09935402771",
+      phone: "09157799337",
       telegram: "t.me/lxlnimalxl",
       linkedin: "linkedin.com/in/nima-rounaghi",
       github: "github.com/lxlnimalxl",
@@ -896,7 +897,8 @@ export const content = {
         subjectLabel: "موضوع / نوع پروژه",
         messageLabel: "توضیحات پروژه، زمان‌بندی و اهداف خود را بنویسید",
         submitBtn: "ارسال درخواست همکاری",
-        successMsg: "پیام شما آماده شد و برای بررسی سریع در دستور کار قرار گرفت."
+        submittingBtn: "در حال ارسال پیام...",
+        successMsg: "پیام شما مستقیماً به ایمیل nimarounaghi11@gmail.com ارسال شد و به زودی با شما تماس گرفته خواهد شد."
       }
     },
     footer: {

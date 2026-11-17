@@ -13,21 +13,28 @@ export default function PrintResumeDocument() {
       <div className="page-break min-h-[280mm] flex flex-col justify-between pb-6">
         <div>
           {/* Header */}
-          <div className="border-b-2 border-zinc-900 pb-4 mb-4 flex justify-between items-start">
-            <div>
-              <h1 className="text-2xl font-black tracking-tight text-zinc-950 uppercase">
-                Seyyed Nima Rounaghi
-              </h1>
-              <p className="text-xs font-bold text-zinc-700 tracking-wide uppercase mt-1">
-                Full-Stack Software Engineer & UI/UX Designer &bull; Co-Founder at Boghcheh & Megabyte System
-              </p>
-              <p className="text-[10px] font-semibold text-zinc-500 tracking-wider uppercase mt-0.5">
-                Specialized in Custom Platforms, Secure Architecture & Embedded IoT
-              </p>
+          <div className="border-b-2 border-zinc-900 pb-4 mb-4 flex justify-between items-center gap-4">
+            <div className="flex items-center gap-3.5">
+              <img
+                src="./nima-profile.png"
+                alt="Seyyed Nima Rounaghi"
+                className="w-14 h-14 rounded-xl object-cover object-top border border-zinc-300 shadow-sm flex-shrink-0"
+              />
+              <div>
+                <h1 className="text-2xl font-black tracking-tight text-zinc-950 uppercase">
+                  Seyyed Nima Rounaghi
+                </h1>
+                <p className="text-xs font-bold text-zinc-700 tracking-wide uppercase mt-0.5">
+                  Full-Stack Software Engineer & UI/UX Designer &bull; Co-Founder at Boghcheh & Megabyte System
+                </p>
+                <p className="text-[10px] font-semibold text-zinc-500 tracking-wider uppercase mt-0.5">
+                  Specialized in Custom Platforms, Secure Architecture & Embedded IoT
+                </p>
+              </div>
             </div>
-            <div className="text-right text-[11px] text-zinc-600 space-y-0.5 font-medium">
+            <div className="text-right text-[11px] text-zinc-600 space-y-0.5 font-medium flex-shrink-0">
               <p>Email: nimarounaghi11@gmail.com</p>
-              <p>Phone: +98 915 779 9337 / +98 993 540 2771</p>
+              <p>Phone: +98 915 779 9337</p>
               <p>GitHub: github.com/lxlnimalxl</p>
               <p>LinkedIn: linkedin.com/in/nima-rounaghi</p>
               <p>Location: Worldwide Remote / Hybrid</p>
@@ -104,7 +111,7 @@ export default function PrintResumeDocument() {
                   </h3>
                   <span className="text-[10px] font-bold text-zinc-600">2021 — Present | Birjand / Hybrid</span>
                 </div>
-                <p className="text-[10px] font-semibold text-zinc-700 italic">Megabyte System &bull; Enterprise IT Infrastructure & Microcontroller Solutions</p>
+                <p className="text-[10px] font-semibold text-zinc-700 italic">Megabyte System &bull; Enterprise IT Infrastructure & Microcontroller Solutions (megabytesystem.com)</p>
                 <ul className="list-disc pl-4 text-[10.5px] text-zinc-700 space-y-0.5 mt-0.5">
                   <li>Co-founded computer engineering and hardware consultancy providing IT infrastructure, system diagnostics, and embedded IoT automation.</li>
                   <li>Programmed custom microcontroller prototypes and telemetry circuits using Arduino and ESP32 with serial and Wi-Fi sensor integration.</li>
@@ -242,7 +249,7 @@ export default function PrintResumeDocument() {
                     <td className="p-1 font-bold text-zinc-950">Megabyte System</td>
                     <td className="p-1">Enterprise IT & IoT</td>
                     <td className="p-1">Co-Founder, Arduino/ESP32 Telemetry, Linux LPIC-1 Hardening</td>
-                    <td className="p-1 font-mono text-zinc-950">github.com/lxlnimalxl</td>
+                    <td className="p-1 font-mono text-zinc-950">megabytesystem.com</td>
                   </tr>
                   <tr>
                     <td className="p-1 font-bold">SHOP.CO</td>
@@ -297,21 +304,28 @@ export default function PrintResumeDocument() {
       <div dir="rtl" className="page-break min-h-[280mm] flex flex-col justify-between pt-4 pb-6 font-farsi">
         <div>
           {/* Header FA */}
-          <div className="border-b-2 border-zinc-900 pb-4 mb-4 flex justify-between items-start">
-            <div>
-              <h1 className="text-2xl font-black tracking-tight text-zinc-950">
-                سید نیما رونقی
-              </h1>
-              <p className="text-xs font-bold text-zinc-700 tracking-wide mt-1">
-                مهندس نرم‌افزار فول‌استک و طراح UI/UX &bull; هم‌بنیان‌گذار بقچه و مگابایت سیستم
-              </p>
-              <p className="text-[10px] font-semibold text-zinc-500 tracking-wide mt-0.5">
-                تخصص در توسعه پلتفرم‌های سفارشی، معماری امنیتی و اتوماسیون سخت‌افزار (IoT)
-              </p>
+          <div className="border-b-2 border-zinc-900 pb-4 mb-4 flex justify-between items-center gap-4">
+            <div className="flex items-center gap-3.5">
+              <img
+                src="./nima-profile.png"
+                alt="سید نیما رونقی"
+                className="w-14 h-14 rounded-xl object-cover object-top border border-zinc-300 shadow-sm flex-shrink-0"
+              />
+              <div>
+                <h1 className="text-2xl font-black tracking-tight text-zinc-950">
+                  سید نیما رونقی
+                </h1>
+                <p className="text-xs font-bold text-zinc-700 tracking-wide mt-0.5">
+                  مهندس نرم‌افزار فول‌استک و طراح UI/UX &bull; هم‌بنیان‌گذار بقچه و مگابایت سیستم
+                </p>
+                <p className="text-[10px] font-semibold text-zinc-500 tracking-wide mt-0.5">
+                  تخصص در توسعه پلتفرم‌های سفارشی، معماری امنیتی و اتوماسیون سخت‌افزار (IoT)
+                </p>
+              </div>
             </div>
-            <div className="text-left text-[11px] text-zinc-600 space-y-0.5 font-medium" dir="ltr">
+            <div className="text-left text-[11px] text-zinc-600 space-y-0.5 font-medium flex-shrink-0" dir="ltr">
               <p>ایمیل: nimarounaghi11@gmail.com</p>
-              <p>تلفن: 09157799337 / 09935402771</p>
+              <p>تلفن: 09157799337</p>
               <p>گیت‌هاب: github.com/lxlnimalxl</p>
               <p>لینکدین: linkedin.com/in/nima-rounaghi</p>
               <p>موقعیت: آماده همکاری ریموت بین‌المللی</p>
@@ -388,7 +402,7 @@ export default function PrintResumeDocument() {
                   </h3>
                   <span className="text-[10px] font-bold text-zinc-600">۱۴۰۰ — اکنون (2021 — Present) | بیرجند / هیبریدی</span>
                 </div>
-                <p className="text-[10px] font-semibold text-zinc-700 italic">مگابایت سیستم &bull; خدمات مهندسی کامپیوتر، شبکه و اتوماسیون سخت‌افزار</p>
+                <p className="text-[10px] font-semibold text-zinc-700 italic">مگابایت سیستم &bull; خدمات مهندسی کامپیوتر، شبکه و اتوماسیون سخت‌افزار (megabytesystem.com)</p>
                 <ul className="list-disc pr-4 text-[10.5px] text-zinc-700 space-y-0.5 mt-0.5">
                   <li>هم‌بنیان‌گذاری شرکت خدمات مهندسی کامپیوتر، زیرساخت فناوری، پشتیبانی سخت‌افزاری و پیاده‌سازی راهکارهای IoT.</li>
                   <li>طراحی و برنامه‌نویسی بردهای میکروکنترلری Arduino و ESP32 جهت اتوماسیون، پایش حسگرها و انتقال داده سریال و بی‌سیم.</li>
@@ -526,7 +540,7 @@ export default function PrintResumeDocument() {
                     <td className="p-1 font-bold text-zinc-950">مگابایت سیستم</td>
                     <td className="p-1">سخت‌افزار، شبکه و IoT</td>
                     <td className="p-1">هم‌بنیان‌گذار، اتوماسیون ESP32/Arduino، مدیریت سرور LPIC-1</td>
-                    <td className="p-1 font-mono text-zinc-950" dir="ltr">github.com/lxlnimalxl</td>
+                    <td className="p-1 font-mono text-zinc-950" dir="ltr">megabytesystem.com</td>
                   </tr>
                   <tr>
                     <td className="p-1 font-bold">SHOP.CO</td>

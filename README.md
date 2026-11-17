@@ -40,7 +40,7 @@ All nineteen platforms feature live links, interactive demos, or Figma design sy
 | Platform / Venture | Specialization | Architecture & Stack | Live Demo / Link | Source / Spec |
 | :--- | :--- | :--- | :--- | :--- |
 | **Boghcheh (بقچه)** | Cultural Handicrafts Marketplace | Co-Founder, Multi-Vendor Architecture, Payment Gateway, Shipping Engine | [boghcheh.com](https://boghcheh.com/) | [boghcheh.com](https://boghcheh.com/) |
-| **Megabyte System** | Enterprise IT Infrastructure & IoT | Co-Founder, Arduino/ESP32 Telemetry, Linux LPIC-1 Hardening | [GitHub](https://github.com/lxlnimalxl) | [GitHub](https://github.com/lxlnimalxl) |
+| **Megabyte System** | Enterprise IT Infrastructure & IoT | Co-Founder, Arduino/ESP32 Telemetry, Linux LPIC-1 Hardening | [megabytesystem.com](https://megabytesystem.com/) | [megabytesystem.com](https://megabytesystem.com/) |
 | **SHOP.CO** | Apparel & Luxury E-Commerce | React 19, Django 5 REST, 3-Angle PDP, Filters, Cart | [Live Demo](https://lxlnimalxl.github.io/shopco-ecommerce-platform/) | [GitHub](https://github.com/lxlnimalxl/shopco-ecommerce-platform) |
 | **CinePass** | Cinema Ticket Booking Engine | React 19, Django 5 REST, Curved SVG Seating, QR Pass | [Live Demo](https://lxlnimalxl.github.io/cinepass-cinema-ticket-booking/) | [GitHub](https://github.com/lxlnimalxl/cinepass-cinema-ticket-booking) |
 | **Vakil** | International Legal Counsel | React 19, Django 5 REST, Court Fee Algorithm | [Live Demo](https://lxlnimalxl.github.io/vakil-legal-platform/) | [GitHub](https://github.com/lxlnimalxl/vakil-legal-platform) |

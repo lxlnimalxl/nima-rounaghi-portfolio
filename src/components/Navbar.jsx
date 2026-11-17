@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import { 
   Globe, 
-  FileText, 
-  Briefcase, 
-  Layers, 
   Menu, 
   X, 
-  ArrowUpRight, 
   Download,
   ShieldCheck,
-  Sparkles
+  CheckCircle2
 } from 'lucide-react';
+import nimaProfileImg from '../assets/nima-profile.png';
 
 export default function Navbar({
   lang = 'en',
@@ -18,20 +15,42 @@ export default function Navbar({
   viewMode = 'portfolio',
   onToggleViewMode,
   navData,
-  onDownloadPdf
+  onDownloadPdf,
+  onNavigate
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const handleLinkClick = (e, targetId) => {
+    e.preventDefault();
+    if (onNavigate) {
+      onNavigate(targetId);
+    } else {
+      const el = document.getElementById(targetId);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#0A0A0C]/90 backdrop-blur-md border-b border-white/8 transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-        {/* Brand Monogram & Identity */}
-        <a href="#hero" className="flex items-center space-x-3 group">
-          <div className="w-10 h-10 rounded-xl bg-[#121216] border border-white/10 flex items-center justify-center text-white font-bold text-sm tracking-wider group-hover:border-white/30 transition-colors shadow-inner">
-            <span>NR</span>
+        
+        {/* Brand Monogram & Identity with Mini Portrait */}
+        <a
+          href="#hero"
+          onClick={(e) => handleLinkClick(e, 'hero')}
+          className="flex items-center gap-3 group cursor-pointer"
+        >
+          <div className="relative w-10 h-10 rounded-xl bg-[#121216] border border-white/15 overflow-hidden flex items-center justify-center flex-shrink-0 group-hover:border-white/40 transition-colors shadow-inner">
+            <img
+              src={nimaProfileImg}
+              alt="Seyyed Nima Rounaghi"
+              className="w-full h-full object-cover object-top"
+            />
+            <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[#121216]" />
           </div>
           <div>
-            <span className="font-bold text-sm sm:text-base text-white tracking-tight block">
+            <span className="font-bold text-sm sm:text-base text-white tracking-tight block group-hover:text-zinc-200 transition-colors">
               {lang === 'fa' ? 'سید نیما رونقی' : 'Seyyed Nima Rounaghi'}
             </span>
             <span className="text-[11px] text-zinc-400 font-medium block">
@@ -41,41 +60,47 @@ export default function Navbar({
         </a>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center space-x-1 sm:space-x-2 text-xs font-semibold text-zinc-300">
+        <nav className="hidden lg:flex items-center gap-1 sm:gap-2 text-xs font-semibold text-zinc-300">
           <a
             href="#services"
-            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors"
+            onClick={(e) => handleLinkClick(e, 'services')}
+            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >
             {navData.services}
           </a>
           <a
             href="#projects"
-            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors"
+            onClick={(e) => handleLinkClick(e, 'projects')}
+            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >
             {navData.projects}
           </a>
           <a
             href="#stack"
-            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors"
+            onClick={(e) => handleLinkClick(e, 'stack')}
+            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >
             {navData.stack}
           </a>
           <a
             href="#resume"
-            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors"
+            onClick={(e) => handleLinkClick(e, 'resume')}
+            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >
             {navData.resume}
           </a>
           <a
             href="#contact"
-            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors"
+            onClick={(e) => handleLinkClick(e, 'contact')}
+            className="px-3.5 py-2 rounded-lg hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >
             {navData.contact}
           </a>
         </nav>
 
         {/* Action Controls: Mode Switch, Language Switch, PDF Download */}
-        <div className="hidden sm:flex items-center space-x-3">
+        <div className="hidden sm:flex items-center gap-3">
+          
           {/* View Mode Toggle (Portfolio / Executive CV) */}
           <div className="bg-[#121216] border border-white/10 rounded-full p-1 flex items-center text-xs font-semibold">
             <button
@@ -121,16 +146,16 @@ export default function Navbar({
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex sm:hidden items-center space-x-2">
+        <div className="flex sm:hidden items-center gap-2">
           <button
             onClick={onToggleLang}
-            className="p-2 rounded-lg bg-[#121216] border border-white/10 text-xs font-bold text-white"
+            className="px-2.5 py-1.5 rounded-lg bg-[#121216] border border-white/10 text-xs font-bold text-white cursor-pointer"
           >
             {lang === 'en' ? 'FA' : 'EN'}
           </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="p-2 rounded-lg bg-[#121216] border border-white/10 text-white"
+            className="p-2 rounded-lg bg-[#121216] border border-white/10 text-white cursor-pointer"
             aria-label="Menu"
           >
             {mobileOpen ? <X size={20} /> : <Menu size={20} />}
@@ -140,39 +165,39 @@ export default function Navbar({
 
       {/* Mobile Drawer */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[#0A0A0C] border-b border-white/10 px-6 py-6 space-y-4">
+        <div className="lg:hidden bg-[#0A0A0C] border-b border-white/10 px-6 py-6 space-y-4 shadow-2xl">
           <div className="flex flex-col space-y-2 text-sm font-medium">
             <a
               href="#services"
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => handleLinkClick(e, 'services')}
               className="py-2 text-zinc-300 hover:text-white"
             >
               {navData.services}
             </a>
             <a
               href="#projects"
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => handleLinkClick(e, 'projects')}
               className="py-2 text-zinc-300 hover:text-white"
             >
               {navData.projects}
             </a>
             <a
               href="#stack"
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => handleLinkClick(e, 'stack')}
               className="py-2 text-zinc-300 hover:text-white"
             >
               {navData.stack}
             </a>
             <a
               href="#resume"
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => handleLinkClick(e, 'resume')}
               className="py-2 text-zinc-300 hover:text-white"
             >
               {navData.resume}
             </a>
             <a
               href="#contact"
-              onClick={() => setMobileOpen(false)}
+              onClick={(e) => handleLinkClick(e, 'contact')}
               className="py-2 text-zinc-300 hover:text-white"
             >
               {navData.contact}
@@ -186,7 +211,7 @@ export default function Navbar({
                   onToggleViewMode('portfolio');
                   setMobileOpen(false);
                 }}
-                className={`flex-1 py-2 text-xs font-bold rounded-md ${
+                className={`flex-1 py-2 text-xs font-bold rounded-md cursor-pointer ${
                   viewMode === 'portfolio' ? 'bg-white text-black' : 'text-zinc-400'
                 }`}
               >
@@ -197,7 +222,7 @@ export default function Navbar({
                   onToggleViewMode('resume');
                   setMobileOpen(false);
                 }}
-                className={`flex-1 py-2 text-xs font-bold rounded-md ${
+                className={`flex-1 py-2 text-xs font-bold rounded-md cursor-pointer ${
                   viewMode === 'resume' ? 'bg-white text-black' : 'text-zinc-400'
                 }`}
               >
@@ -210,7 +235,7 @@ export default function Navbar({
                 onDownloadPdf();
                 setMobileOpen(false);
               }}
-              className="w-full py-3 rounded-xl bg-white text-black text-xs font-bold flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-white text-black text-xs font-bold flex items-center justify-center gap-2 cursor-pointer shadow-md"
             >
               <Download size={14} />
               <span>{lang === 'fa' ? 'دانلود فایل PDF رزومه' : 'Download PDF Resume'}</span>

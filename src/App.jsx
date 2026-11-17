@@ -31,7 +31,6 @@ export default function App() {
   };
 
   const handleDownloadPdf = () => {
-    // Check if the pre-generated PDF exists, otherwise trigger clean print dialog
     const pdfUrl = './Seyyed_Nima_Rounaghi_Resume.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
@@ -42,9 +41,21 @@ export default function App() {
     document.body.removeChild(link);
   };
 
-  const scrollToProjects = () => {
-    const el = document.getElementById('projects');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  const handleNavigate = (sectionId) => {
+    if (viewMode !== 'portfolio') {
+      setViewMode('portfolio');
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 80);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   return (
@@ -59,6 +70,7 @@ export default function App() {
           onToggleViewMode={setViewMode}
           navData={currentContent.nav}
           onDownloadPdf={handleDownloadPdf}
+          onNavigate={handleNavigate}
         />
 
         <main className="flex-1">
@@ -69,7 +81,7 @@ export default function App() {
                 lang={lang}
                 heroData={currentContent.hero}
                 metaData={currentContent.meta}
-                onExploreProjects={scrollToProjects}
+                onExploreProjects={() => handleNavigate('projects')}
                 onDownloadPdf={handleDownloadPdf}
               />
 
@@ -79,7 +91,7 @@ export default function App() {
                 servicesData={currentContent.services}
               />
 
-              {/* 13 Production Case Studies */}
+              {/* 19 Production Case Studies */}
               <ProjectsSection
                 lang={lang}
                 projectsData={currentContent.projects}
